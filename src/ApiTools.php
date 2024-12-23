@@ -1,6 +1,5 @@
 <?php 
-namespace Editweb\ApiTools;
-
+namespace EditStefanH\Apitools;
 class ApiTools
 {
     public function __construct()
