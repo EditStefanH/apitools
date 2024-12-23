@@ -1,11 +1,11 @@
 {
-    "name": "editweb/apitools",
+    "name": "editstefanh/apitools",
     "description": "PHP Library for sending curl api requests",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Editweb\\Apitools\\": "src/"
+            "EditStefanH\\Apitools\\": "src/"
         }
     },
     "authors": [
