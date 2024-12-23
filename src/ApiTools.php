@@ -1,14 +1,58 @@
 <?php 
 namespace EditStefanH\Apitools;
+
+use PhpParser\Node\Expr\Cast\String_;
+
 class ApiTools
 {
     private $headers;
     private $accessToken;
-    
-    public function __construct(Array $headers = [], String $accessToken = '')
+    private $endPointURL;
+        
+    /**
+     * __construct
+     *
+     * @return void
+     */
+    public function __construct(
+        array $headers = [], 
+        string $accessToken = '',
+        string $endPointURL = ''
+    )
     {
         $this->headers = $headers ?? [];
         $this->accessToken = $accessToken ?? '';
+        $this->endPointURL = $endPointURL ?? $this->endPointURL;
+    }
+    
+    /**
+     * setHeaders
+     *
+     * @param  array $headers
+     * @return void
+     */
+    public function setHeaders(array $headers) {
+        $this->headers = $headers;
+    }
+    
+    /**
+     * setAccessToken
+     *
+     * @param  string $accessToken
+     * @return void
+     */
+    public function setAccessToken(string $accessToken) {
+        $this->accessToken = $accessToken;
+    }
+    
+    /**
+     * setEndPointURL
+     *
+     * @param  string $endPointURL
+     * @return void
+     */
+    public function setEndPointURL(string $endPointURL) {
+        $this->endPointURL = $endPointURL;
     }
 
     /**
